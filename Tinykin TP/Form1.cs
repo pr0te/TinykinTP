@@ -2,10 +2,14 @@ using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace Tinykin_TP {
 	public partial class Form1 : Form {
+		string toolVersion = "1.0.0";
+		string tinykinVersion = "1.0.7";
+
 		[DllImport("user32.dll")]
 		public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, uint vlc);
 		[DllImport("user32.dll")]
@@ -79,6 +83,7 @@ namespace Tinykin_TP {
 
 		public Form1() {
 			InitializeComponent();
+			this.Text += $" ({toolVersion}) - Optimized for Tinykin {tinykinVersion}";
 		}
 
 		private void ConnectToGame() {
