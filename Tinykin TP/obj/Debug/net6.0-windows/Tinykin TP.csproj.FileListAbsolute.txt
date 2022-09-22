@@ -1,0 +1,19 @@
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Tinykin TP.exe
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Tinykin TP.deps.json
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Tinykin TP.runtimeconfig.json
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Tinykin TP.dll
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\ref\Tinykin TP.dll
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Tinykin TP.pdb
+C:\Git\TinykinTP\Tinykin TP\bin\Debug\net6.0-windows\Memory.dll
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.csproj.AssemblyReference.cache
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin_TP.Form1.resources
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.csproj.GenerateResource.cache
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.AssemblyInfoInputs.cache
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.AssemblyInfo.cs
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.csproj.CoreCompileInputs.cache
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.csproj.CopyComplete
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.dll
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\ref\Tinykin TP.dll
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.pdb
+C:\Git\TinykinTP\Tinykin TP\obj\Debug\net6.0-windows\Tinykin TP.genruntimeconfig.cache
