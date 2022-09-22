@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace Tinykin_TP {
 		List<TPPositionEntry> tpPositionEntryList = new List<TPPositionEntry>();
 		BindingSource bs = new BindingSource();
 		ContextMenuStrip listboxContextMenu;
+
+		string saveDir = Path.Combine(Environment.CurrentDirectory, "savedpositions.json");
 
 		protected override void WndProc(ref Message msg) {
 			if (msg.Msg == 0x0312) {
@@ -133,16 +136,22 @@ namespace Tinykin_TP {
 			lstbPositions.DataSource = bs;
 			bs.ResetBindings(false);
 			lstbPositions.DisplayMember = "DisplayDescription";
+
+			SavePositionsToFile();
 		}
 
 		private void Form1_Load(object sender, EventArgs e) {
+			if (LoadPositionsFromFile()) {
+				UpdateListBox();
+			}
+
 			bs.DataSource = tpPositionEntryList;
 			cbLevelSelect.SelectedIndex = 0;
 
 			listboxContextMenu = new ContextMenuStrip();
 			listboxContextMenu.Opening += new CancelEventHandler(listboxContextMenu_Opening);
 			lstbPositions.ContextMenuStrip = listboxContextMenu;
-
+			
 			InitHotkeys();
 			connectToProcessClock.Start();
 		}
@@ -243,6 +252,26 @@ namespace Tinykin_TP {
 				numHotkey.Value++;
 
 			tbDescription.Text = $"Position {numHotkey.Value}";
+		}
+
+		private void SavePositionsToFile() {
+			using (StreamWriter file = File.CreateText(saveDir)) {
+				JsonSerializer serializer = new JsonSerializer();
+				serializer.Serialize(file, tpPositionEntryList);
+			}
+		}
+
+		private bool LoadPositionsFromFile() {
+			if (!File.Exists(saveDir))
+				return false;
+
+			string json = File.ReadAllText(saveDir);
+			tpPositionEntryList = JsonConvert.DeserializeObject<List<TPPositionEntry>>(json);
+
+			if (tpPositionEntryList != null && tpPositionEntryList.Count > 0)
+				return true;
+			else
+				return false;
 		}
 
 		private void cbLevelSelect_SelectedIndexChanged(object sender, EventArgs e) {

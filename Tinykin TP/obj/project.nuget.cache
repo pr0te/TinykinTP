@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H8HRY4c0ZGDM268tQknMv4g60lewcBbcoCiZCXYFe9jYJs7c5JrJUKdyQIKFlkcfXcw1N89aYoXPKDvy2Twbsg==",
+  "dgSpecHash": "HvUrk47bRdCQiTR8/51pjfXhVL2Q8OdAs2nV7DiGCusHAfxLWGNoc76rWWJW8QOb9Cf+1d7fba1b6YPxj6Y/rA==",
   "success": true,
   "projectFilePath": "C:\\Git\\TinykinTP\\Tinykin TP\\Tinykin TP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tnl\\.nuget\\packages\\memory.dll.x64\\1.2.24\\memory.dll.x64.1.2.24.nupkg.sha512"
+    "C:\\Users\\tnl\\.nuget\\packages\\memory.dll.x64\\1.2.24\\memory.dll.x64.1.2.24.nupkg.sha512",
+    "C:\\Users\\tnl\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

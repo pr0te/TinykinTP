@@ -17,3 +17,4 @@ C:\Git\TinykinTP\Tinykin TP\obj\x64\Debug\net6.0-windows\ref\Tinykin TP.dll
 C:\Git\TinykinTP\Tinykin TP\obj\x64\Debug\net6.0-windows\Tinykin TP.pdb
 C:\Git\TinykinTP\Tinykin TP\obj\x64\Debug\net6.0-windows\Tinykin TP.genruntimeconfig.cache
 C:\Git\TinykinTP\Tinykin TP\obj\x64\Debug\net6.0-windows\Tinykin TP.csproj.AssemblyReference.cache
+C:\Git\TinykinTP\Tinykin TP\bin\x64\Debug\net6.0-windows\Newtonsoft.Json.dll
